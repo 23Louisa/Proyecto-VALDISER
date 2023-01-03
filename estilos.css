@@ -1,0 +1,454 @@
+/*ESTILOS GENERALES*/
+*{
+margin: 0px;    
+font-family: 'Source Sans Pro', sans-serif;
+box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-size: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-weight: 300;
+}
+h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+}
+h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+
+}
+ul{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+}
+section{
+    height: 750px;
+    width: 100%;
+    margin: 0px;
+}
+
+.contenedor-principal{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+button{
+    background:#1E88E5;
+    margin-block: auto;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+   }
+
+/*Estilos de inicio*/
+header{
+    display: flex;
+    flex-flow: column nowrap;
+    background-image: url(imagenes/inicio.jpg);
+    height: 750px;
+}
+    .menu{
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        width: 840px;
+        margin-top: 40px;
+        margin-left: 20px;
+        border-radius: 15px;
+    }
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+         }
+        nav a{
+            color: #fff;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 10px;
+            
+        }
+        nav a i{
+            margin: 10px;
+        }
+        .social{
+            display: flex;
+            flex: 1 1 auto;
+        }
+        .social a{
+            color: #FFFFFF;
+            padding: 0 0px;
+            margin: 0px;
+        }
+        .social a:hover{
+            color: #000;
+        }
+        .logo a:hover{
+            color: #000;
+        }
+        nav a:hover{
+            color: #000;
+        }
+    .img-principal{
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 550px;
+
+    }
+
+    /*ESTILOS SOBRE LA EMPRESA*/
+    .SobreNosotros{
+        background-image: url(imagenes/nosotros.jpg);    
+        display: flex;
+        flex-flow: column;
+        margin: 0px;
+        padding-top: 80px;
+        padding-left: 200px;
+        text-align: center;
+       }
+       .SobreNosotros h1{
+        color: #fff;
+        margin-top: 0px;
+        margin-bottom: 60px;
+        font-size: 50px;
+        width: 300px;
+       }
+       .SobreNosotros h2{
+        font-size: 30px;
+        color: #fff;
+        margin: auto;
+       }
+       .SobreNosotros p{
+        font-size: 20px;
+        color: #fff;
+       }
+        .Nosotros{
+            width: 700px;
+            height: 180px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        
+        }
+
+            .Nosotros h2{
+                padding-bottom: 30px;
+            }
+            .Nosotros p{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+           
+            .informacion{
+                display: flex;
+                flex-flow: row nowrap;
+                flex: 2 1 auto;
+                padding: 30px;
+                margin: 0 auto;
+            }
+                .vision{
+                    flex: 1 1 auto;
+                    text-align: center;
+                    padding-top: 5px;
+                    width: 600px;
+                    height: 180px;
+                }
+                    .vision p{
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        margin: 20px  10px 20px;
+                    }
+                    
+                .mision{
+                    flex: 1 1 auto;
+                    text-align: center;
+                    padding-top: 5 px;
+                    width: 600px;
+                    height: 180px;
+                }
+                .mision p{
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    margin: 20px 10px 10px 20px;
+                }
+                
+  /*ESTILOS GALERIA*/
+    .Galeria{
+        background-image: url(imagenes/galeria.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .Galeria h2{
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    
+        .imagenes{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            padding-left: 30px;
+        }
+
+        .imagenes img{
+            margin-bottom: 10px;
+            height: 170px;
+            width: 250px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+   
+        .Galeria button{   
+                margin: 0px;
+        }    
+
+/*SECCION CLIENTES*/
+.Clientes{
+    background-image: url(imagenes/clientes.jpg);
+
+}
+    .seccion-clientes{
+        height: 750px;
+        margin: 50px;
+    }
+    
+        .seccion-clientes h2{
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        }  
+        .contendor-clientes{
+            width: 1300px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            padding: 15px;
+        }
+            .cliente{
+                flex-flow: row;
+                width: 324px;
+                height: 210px;
+                margin: 25px;
+                padding: 5px;
+                border-radius: 10px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin-left: 70px;
+            }
+        
+        .seccion-clientes button{
+            width: 150px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+
+        }
+   
+    /*SECCION CONTACTO*/
+    .Contactos{
+        background-image: url(imagenes/contacto.jpg);
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+    }
+        .contacto{
+            display: flex;
+            flex-direction: row;
+            height: 650px;
+            padding: 30px;
+            width: 1100px;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 100px;
+            margin-left: 300px;
+            
+        }
+            .datos{
+                display: flex;
+                flex-direction: column;
+                width: 350px;
+                height: 550px;
+                margin-right: 80px;
+            }
+                .datos h1{
+                    color: #000;
+                    font-size: 50px;
+                    
+                }
+                .dato{
+                    
+                    height: 100px;
+                }
+
+                    .dato p{
+                        font-size: 18px;
+                        width: 150px;
+                        height: 20px;
+                        padding: 10px;
+                        margin: 10px;
+                    }
+                .dato p .texto1{
+                    margin: 10px;
+                }
+                .datos button{
+                    margin-left: 20px;
+                }
+                
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            width: 550px;
+            height: 550px;
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 30px;
+            margin:0;
+        }
+        
+            .formulario h3{
+                margin: 10px;
+
+            }
+            .formulario textarea{
+                margin: 10px;
+                width: 400px;
+            }
+                .caja-text1{
+                    width: 400px;
+                    padding: 0;
+                    height: 160px;
+                }
+       
+            .formulario button{
+                width: 200px;
+                align-items: center;
+                margin-left: 180px;
+            }
+
+/*SECCION FOOTER*/
+footer{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(imagenes/footer.jpg);
+
+}
+
+    footer .slogan{
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        margin-top: 80px;
+    }
+        footer .slogan h2{
+            width: 450px;
+            margin:0px;
+            font-size: 20px;
+            color: #fff;
+            padding-top: 50px;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+        footer .slogan img{
+        }
+    footer .informacion{
+        margin-top: 100px;
+        margin-left: 80px;
+        margin-right: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: #fff;
+
+    }
+        footer .informacion li{
+            list-style-type: none;
+            margin: 0 auto;  
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+
+        }
+       
+            footer .informacion li .sub{
+                font-size: 20px;
+                color: #fff;
+                margin-bottom: 20px;
+
+            }
+            footer .informacion li ul a{
+                color: #fff;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 200;
+
+            }
+
+        footer .social{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+            footer .social .redes-sociales{
+                display: flex;
+                flex-direction: row;
+                margin: auto 0;
+                width: 200px;
+                margin-left: 850px;
+                align-items: flex-end;
+            }
+                footer .social .redes-sociales button{
+                    border: 0;
+                    background-color: transparent;
+                    font-size: 30px;
+                    border-radius: 50%;
+                    height: 45px;
+                    width: 50px;
+                    color: #fff;
+                    text-align: center;
+                }
+    
+            footer .social a{
+                margin: auto 0;
+                font-size: 15px;
+            }
+        footer hr{
+            height: 4px;
+            width: 1300px;
+            margin:  0 auto;
+        }
